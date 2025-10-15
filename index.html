@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" class="roboto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Analyze the readability of your text instantly with the Coleman-Liau Index. Get grade level, sentence count, and readability insights for better writing." />
+<meta name="keywords" content="readability analyser, readability checker, Coleman Liau index, text analyzer, writing grade level, English readability, content optimization, AI writing tools" />
+<meta name="author" content="Quang-Ly Chia" />
+<meta name="robots" content="index, follow" />
+<title>Readability Analyser</title>
+<link rel="icon" type="image/x-icon" href="./assets/favicon.svg">
+<link rel="stylesheet" href="./style/reset.css">
+<link rel="stylesheet" href="./style/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light text-dark" >
+
+    <Header class="headr-white stroke-dark blur" id="headr">
+        <div >
+          <a href="./index.html">
+            <img src="./assets/favicon.svg" alt="logo" id="logo">
+          </a>
+        </div>
+        <brand class="brand">
+          <p class="h2 bold">Readability Analyser</p>
+          <p style="padding-top: 12px;" class = "h3">Inspired by CS50's Readability Problem Set</p>
+        </brand>
+    </Header>
+<h1 class="display-lg righteous text-center text-primary-light" id="progname" style="font-size:132px; color:#3BB2FF">Readability</h1>
+
+<!-- input -->
+ <main style = "align-items: center; justify-content: center; display: flex; flex-direction: column;">
+        <switch>
+        <p class=""> Dark Mode </p>
+        <a href="">
+          <img src="./assets/Lightmode.svg" alt="switch" id="modeSwitch" class="modeSwitch">
+        </a>
+      </switch>  
+  <usr-in id="input">
+      <p class= "h3 italic" style="margin-bottom: 24px;">
+        Please enter text below:
+      </p>
+
+        <textarea id="inputText" rows="8"></textarea><br>
+        <button id="analyzeBtn">Analyse</button>
+    </usr-in>
+
+       <!-- output -->
+      <div id="output" style="margin-top: 12px; padding: 24px">
+    <grd>
+        <p class="gradebx">Grade <span id="grade"></span> <span id="gradeDescription" class="body-lg italic"></span></p>
+    </grd>
+  <table>
+    <tr>
+        <td>Number of letters: </td>
+        <td><p id="letters"></p></td>
+    </tr>
+    <tr>
+        <td>Number of words: </td>
+        <td><p id="words"></p></td>
+    </tr>
+    <tr>
+        <td>Number of sentences:</td>
+        <td><p id="sentence">Lorem ipsum dolor sit amet.</p></td>
+    </tr>
+    <tr>
+        <td>L (letters per 100 words):</td>
+        <td><p id="L"></p></td>
+    </tr>
+    <tr>
+        <td>S (sentences per 100 words): </td>
+        <td><p id="S"></p></td>
+    </tr>
+    <tr>
+        <td>Coleman-Liau index: </td>
+        <td><p id="index"></p></td>
+    </tr>
+  </table>
+ 
+  <button id="doneBtn">Done</button>
+</div>
+  </main>
+
+<footer class="h3 italic align-center text-center">
+
+  <external-link id="contacts">
+    <a href="https://www.linkedin.com/in/quang-ly-chia-711720221?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BJAqz0RRbT0maeBkZsYA%2BAA%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:cquangly@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+  </external-link>
+
+ 
+<p class="body-lg" style="margin-top: 0px; width: 60%; margin-bottom: 0px;; margin-left: auto; margin-right: auto; line-height: 32px; ">
+&copy 2025 Quang-Ly Chia <br>
+Disclaimer: This tool is for educational purposes only. The readability scores provided are estimates and may not reflect the actual readability of the text. Always consider multiple factors when evaluating text complexity.
+</p> 
+</footer>
+<script src="./script/app.js"></script>
+</body>
+</html>
