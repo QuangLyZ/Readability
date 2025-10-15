@@ -257,7 +257,7 @@ body {
             text-align: center;
             align-content: center;
             align-items: center;
-            position: fixed;
+            position: relative;
             bottom: 0;
         }
 
